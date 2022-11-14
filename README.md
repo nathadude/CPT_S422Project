@@ -12,3 +12,9 @@ BCheck - Checks amount of comments
 Assumtions:
 every single line comment is indicative of a sing comment (SINGLE_LINE_COMMENT)
 every start to a block of comments counts as one big comment (BLOCK_COMMENT_BEGIN)
+
+11/13/2022
+Deliverable2:
+
+The rest of the metric checks.
+JUnit white-box testing.
