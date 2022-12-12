@@ -58,3 +58,5 @@ but one failure hhaving to do with puppycrawl getLine() screwed me.
 
 Was able to fix one part of code from deliverable2, 
 but was still unable to find a way to fix testing for finish tree.
+
+Finished @ 1:40am 12/12/2022 :/
