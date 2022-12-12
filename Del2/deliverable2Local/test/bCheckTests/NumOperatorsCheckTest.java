@@ -61,9 +61,10 @@ public class NumOperatorsCheckTest
 		Mockito.verify(spyCheck, times(1)).visitToken(spy);
 	}
 	
+//	Comment out for PIT Testing
 	@Test
 	public void getOperatorsTest() 
 	{
-		Assert.assertEquals(1, this.check.getOperators());
+		Assert.assertEquals(1, NumOperatorsCheck.getOperators());
 	}
 }

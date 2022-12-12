@@ -62,11 +62,11 @@ public class HalsteadDifficultyCheckTest
 	};
 	
 //	Not passing - mention in report
-//	@Test
-//	public void getDefaultTokensTest() 
-//	{
-//		Assert.assertArrayEquals(this.valid, this.check.getDefaultTokens());
-//	}
+	@Test
+	public void getDefaultTokensTest() 
+	{
+		Assert.assertArrayEquals(this.check.getDefaultTokens(), this.valid);
+	}
 	
 	@Test
 	public void getHalsteadDifficultyTest() 

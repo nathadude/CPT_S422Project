@@ -41,7 +41,7 @@ public class ExpressionCheck extends AbstractCheck
 	@Override
 	public void finishTree(DetailAST ast) 
 	{
-		log(ast, "Number of expressions: " + this.getExpressions() + " -NA");
-		this.count = 0;
+		log(ast, "Number of expressions: " + Integer.toString(count) + " -NA");
+		count = 0;
 	}
 }
