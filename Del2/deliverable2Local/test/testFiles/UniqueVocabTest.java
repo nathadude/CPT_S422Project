@@ -4,7 +4,7 @@ public class UniqueVocabTest
 {
 	public void uniqueVocab() 
 	{
-		String unique = "Hello";
-		unique = "World";
+		String unique = "I";
+		unique = "Cried";
 	}
 }

@@ -14,7 +14,7 @@ public class ManyLoop
 		{
 			c = 'B';
 		}
-		int i =0;
+		int i = 0;
 		do {
 			i++;
 		}while(i < 10);

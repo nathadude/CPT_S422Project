@@ -16,9 +16,9 @@ public class NestedLoop
 		while(c == '1') 
 		{
 			c = 'B';
-			for(int i =0; i <10; i++) 
+			for(int i =0; i <4; i++) 
 			{
-				
+				// :)
 			}
 		}
 	}

@@ -29,7 +29,7 @@ class HalsteadVolumeBB {
 	@Test
 	void volumeTest() throws IOException, CheckstyleException, ParseException {
 		HalsteadVolumeCheck check = new HalsteadVolumeCheck();
-		String filePath = "test/testFiles/VolTest.java"; // VolTest
+		String filePath = "test/testFiles/VolTest.java";
 		TreeWalker treeWalker = new TreeWalker(filePath,check);
 		treeWalker.test();
 		DecimalFormat df=new DecimalFormat("0.00");

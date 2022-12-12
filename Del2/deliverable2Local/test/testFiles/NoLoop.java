@@ -1,6 +1,7 @@
 package testFiles;
 
-public class NoLoop {
+public class NoLoop 
+{
 	//No Loops
 	int i = 10;
 }

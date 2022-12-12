@@ -1,5 +1,6 @@
 package testFiles;
 
-public class NoHalsteadLength {
+public class NoHalsteadLength 
+{
 
 }

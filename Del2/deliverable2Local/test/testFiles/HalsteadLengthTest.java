@@ -1,11 +1,11 @@
 package testFiles;
 
-public class HalsteadLengthTest {
+public class HalsteadLengthTest 
+{
 	int sort (int x[ ], int n)
 
 	{
 	    int i, j, save, im1;
-	    /*This function sorts array x in ascending order */
 	    if (n< 2) return 1;
 	    for (i=2; i<=n; i++)
 	    {
