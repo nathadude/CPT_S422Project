@@ -55,6 +55,7 @@ public class NumCommentsCheckTest
 		Mockito.verify(spyCheck, times(2)).visitToken(spy);
 	}
 	
+//	Comment out for PIT Testing
 	@Test
 	public void getCommentsCountTest() 
 	{
