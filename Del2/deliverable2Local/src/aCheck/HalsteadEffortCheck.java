@@ -1,8 +1,7 @@
 package aCheck;
 
-import com.puppycrawl.tools.checkstyle.api.*;
-
-import aCheck.HalsteadVolumeCheck;
+import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
+import com.puppycrawl.tools.checkstyle.api.DetailAST;
 
 public class HalsteadEffortCheck extends AbstractCheck 
 {

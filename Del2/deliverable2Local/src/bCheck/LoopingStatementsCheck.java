@@ -6,7 +6,7 @@ import org.apache.commons.lang3.ArrayUtils;
 
 public class LoopingStatementsCheck extends AbstractCheck {
 	
-	private int count = 0;
+	public int count = 0;
 
 	@Override
 	public int[] getDefaultTokens() {
@@ -20,23 +20,21 @@ public class LoopingStatementsCheck extends AbstractCheck {
 
 	@Override
 	public int[] getRequiredTokens() {
-		return new int[] {TokenTypes.SLIST};
+		return new int[] {TokenTypes.DO_WHILE, TokenTypes.LITERAL_FOR, TokenTypes.LITERAL_WHILE};
 	}
 	
 	@Override
 	public void visitToken(DetailAST ast) {
-		if (ArrayUtils.contains(new int[] {TokenTypes.DO_WHILE, TokenTypes.LITERAL_WHILE, TokenTypes.LITERAL_FOR}, ast.getParent().getType())) {
-			this.count += ast.getChildCount();
-		}
-	}
-	
-	public int getLoopingStatements() {
-		return count;
+		count++;
 	}
 	
 	@Override
 	public void finishTree(DetailAST ast) {
-		log(ast, "Looping statements check: " + this.getLoopingStatements() + " -NA");
+		log(ast, "Looping statements check: " + Integer.toString(count) + " -NA");
 		this.count = 0;
+	}
+
+	public double getLoopingStatements() {
+		return count;
 	}
 }
